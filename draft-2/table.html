@@ -1,0 +1,179 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1px" width="50%">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>salary</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Mohamed Ahmed</td>
+          <td>19</td>
+
+          <td>80000</td>
+        </tr>
+
+        <tr>
+          <td>Shahd</td>
+          <td>19</td>
+          <td>50000</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2">Total Salary</td>
+          <td>130000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- ** list  **-->
+
+    <ul>
+      <li>html</li>
+      <li>
+        css
+        <ul>
+          <li>
+            flex
+            <ul>
+              <li>flex-direction</li>
+              <li>justify-content</li>
+              <li>align-items</li>
+            </ul>
+          </li>
+          <li>grid</li>
+        </ul>
+      </li>
+      <li>js</li>
+    </ul>
+
+    <ol start="10">
+      <li>html</li>
+      <li>
+        css
+        <ol>
+          <li>
+            flex
+            <ol>
+              <li>flex-direction</li>
+              <li>justify-content</li>
+              <li>align-items</li>
+            </ol>
+          </li>
+          <li>grid</li>
+        </ol>
+      </li>
+      <li>js</li>
+      <li>angular</li>
+    </ol>
+
+    <dl>
+      <dt>html</dt>
+      <dd>html is the structure of the website</dd>
+
+      <dt>css</dt>
+      <dd>css is the style of the website</dd>
+
+      <dt>js</dt>
+      <dd>js is the behavior of the website</dd>
+    </dl>
+
+    <!-- && Form -->
+
+    <form>
+      <table border="1px">
+        <tbody>
+          <tr>
+            <td>
+              <label for="name"> Name: </label>
+            </td>
+            <td>
+              <input
+                type="text"
+                value="Mohamed"
+                id="name"
+                name="Name"
+                readonly=""
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="age"> age: </label>
+            </td>
+            <td>
+              <input id="age" type="number" value="19" name="age" disabled="" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email"> email: </label>
+            </td>
+            <td>
+              <input type="email" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="password"> password: </label>
+            </td>
+            <td>
+              <input type="password" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button type="submit">submit</button>
+
+      <select name="cars" id="cars">
+        &gt;
+        <option value="volvo">volvo</option>
+        <option value="bmw">bmw</option>
+        <option value="audi">audi</option>
+      </select>
+      <br>
+      <textarea rows="10" cols="50"> </textarea>
+      <br>
+        <input type="radio" id="femail" name="gender" value="femail" >
+        <label for="femail">femail</label>
+        <br>
+        
+        <input type="radio" id="mail" name="gender" value="mail" >
+        <label for="mail">mail</label>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <input type="checkbox" id="html">
+        <label for="html">html</label><br>
+
+        <input type="checkbox" id="css">
+        <label for="css">css</label><br>
+
+        <input type="checkbox" id="css">
+        <label for="js">js</label><br>
+
+        <input type="checkbox" id="c++">
+        <label for="c++">c++</label><br>
+    </form>
+
+    <button>submit outside</button>
+  </body>
+</html>

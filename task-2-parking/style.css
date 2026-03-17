@@ -1,0 +1,353 @@
+body {
+  background: radial-gradient(circle, #568198 0%, #0f172a 100%); 
+}
+
+.NavPar {
+  display: flex;
+  background-color: rgba(59, 76, 108, 0.9);
+  padding: 10px 30px;
+  border-radius: 50px;
+  width: fit-content;
+  margin: 10px;
+}
+
+.NavPar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 30px;
+  font-family:cursive;
+  transition: 0.3s;
+}
+
+.NavPar a:hover {
+  color: #38bdf8;
+  transform: scale(1.05);
+}
+
+.Sec-1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  margin-top: 20px;
+}
+
+.Sec-1 img {
+  width: 100%;
+  height: 550px;
+  display: block; 
+}
+
+.Sec-1 h1 {
+  position: absolute;
+  margin: 0; 
+  font-size: 90px;
+  color: #166cf6;
+  text-shadow:3px 3px 0px rgba(0, 0, 0, 0.7);
+  pointer-events: none; 
+}
+
+
+.Sec-2 {
+  display: flex;
+}
+
+.Sec-2 img {
+  width: 600px;
+}
+
+.textparkpilot {
+  text-align: center;
+  margin-top: 200px;
+  margin-left: 100px;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+}
+
+.Sec-3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Sec-3 img {
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.5s ;
+  cursor: pointer;
+}
+.Sec-3 img:hover {
+  transform: scale(1.1)
+}
+
+.Sec-3 h3 {
+  text-align: center;
+  color: rgb(74, 221, 241);
+  text-shadow:4px 3px 0px rgba(0, 0, 0, 0.7);
+  font-size: 35px;
+  font-weight: bold;
+  border: 4px solid white;
+  border-radius: 15px;
+
+}
+
+h2, p {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+h2:hover, p:hover {
+  transform: scale(1.04);
+  color: #ffffff;
+  text-shadow:1px 1px 0px rgba(0, 0, 0, 0.7);
+  font-style:oblique;
+}
+
+body {
+  margin: 0;
+}
+
+  .aboutSec-1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 50px;
+}
+
+.aboutSec-1 img {
+  width: 100%;
+  height: 720px;
+  display: block;
+}
+
+.aboutSec-1 h1 {
+  position: absolute; 
+  margin: 0; 
+  font-size: 75px;
+  font-weight: bold;
+  color: rgb(38, 224, 224);
+  text-shadow:3px 3px 0px rgba(0, 0, 0, 0.7);
+}
+
+.aboutSec-2 {
+  display: flex;
+
+}
+
+
+.aboutSec-2 img {
+  width: 40%;
+  height: 550px;
+  border-radius: 25px;
+}
+
+.aboutSec-2 h2 {
+  font-size: 35px;
+}
+
+.textSec-2,.textabout {
+  display: block;
+  margin-top: 140px;
+  margin-left: 140px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.content-box {
+  display: flex;
+  gap: 60px;
+
+  margin-top: 100px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.buttonpark {
+  background-color: rgb(27, 138, 118);
+  color: white;
+  font-size: 35px;
+  font-family: serif;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttonpark:hover {
+  background-color: black;
+}
+
+
+
+  .form-body {
+  background-color: #0f172a; 
+  
+}
+
+.form-box {
+  background-color: #243b47; 
+  margin: 40px auto;
+  width: 450px;
+  padding: 40px;
+  border-radius: 15px;
+  border: 4px solid #f8fcfbf5; 
+  display: block;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #f3f0f0;
+  font-weight: 500;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+input, textarea{
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+}
+textarea {
+  resize: none
+}
+
+input:hover {
+  border: 2px solid #000000;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+.time input {
+  width: 48%; 
+}
+
+.submit {
+  margin-top: 40px;
+  height: 45px;
+  width: 150px;
+  align-self: center;
+  border-radius: 25px;
+  border: none;
+  background: white;
+  color: #2e1a4d;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit:hover {
+  background: #00edf17d;
+  transform: scale(1.2);
+}
+
+.headerform {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    margin-top: 15px;
+}
+
+.headerform h2 {
+    color: #38bdf8;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact{
+    
+    text-align: center;
+    margin-top: 30px;
+  }
+.contact p {
+    color: white;
+    font-size: 15px;
+}
+
+.contact a {
+    color: #25d366;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    
+}
+
+
+
+
+.Sec-footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 60px;
+    border-top: 2px solid rgb(8, 101, 222);
+    font-family: sans-serif;
+}
+
+.Sec-footer p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.linksfooter {
+    margin-bottom: 15px;
+}
+
+.linksfooter a {
+    color: #38bdf8;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.linksfooter a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-s {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-top: 15px;
+    display: block;
+}
+
+
+
+html, body {
+    min-width: 1200px; 
+    overflow-x: auto;
+}
+
+img { 
+    max-width: none !important;
+}
