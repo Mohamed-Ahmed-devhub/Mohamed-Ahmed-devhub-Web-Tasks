@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+
+:root{
+  --bg:#010409 ;
+  --accent: #38bdf8;
+  --text-muted: #8b949e;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+body{
+  background: var(--bg);
+  color: #fff;
+  overflow: hidden;
+}
+
+.Sec-1{
+  position: fixed;
+  top: 25px;
+  width: 100%;
+  z-index: 1000;
+}
+.hero-Sec-1{
+  width: fit-content;
+  margin: 0 auto;
+  border: 3px solid rgba(255, 255, 255, 0.714);
+  border-end-end-radius: 30px;
+  border-start-start-radius: 30px;
+  background-color: #101929;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 10px;
+}
+
+.logo{
+  font-weight:bold ; font-size: 20px; 
+  padding-left: 10;
+}
+.logo span{color: var(--accent);}
+
+.nav-par{
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+.nav-par a{
+  text-decoration: none;
+  font-size: 24px;
+  color:rgb(227, 232, 244) ;
+  transition: 0.4 cubic-bezier(0.23, 1, 0.32, 1);
+  padding: 10px;
+}
+.nav-par a:hover{
+  color: #fff;
+  transform:scale(1.1);
+  border-radius: 17px;
+  background-color: #0104096e ;
+  padding: 10px;
+  box-shadow: 0 15px 35px rgba(64, 204, 236, 0.397);
+}
+.Sec-2{
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.content-box{
+  justify-content: space-between;
+  width: 100%;
+  
+}
