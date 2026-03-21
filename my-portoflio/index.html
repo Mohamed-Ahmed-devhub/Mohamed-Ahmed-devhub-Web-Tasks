@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
 </head>
 <body>
@@ -176,24 +178,25 @@
             </div>
 
             <div class="contact-glass-container">
-                <form id="my-form" action="https://formsubmit.co/ajax/mohamed.ahmed.programer@gmail.com" method="POST" class="ultimate-form">
-                    <div class="floating-group">
-                        <input type="text" name="name" required placeholder=" ">
-                        <label>Your Name</label>
-                    </div>
-                    <div class="floating-group">
-                        <input type="email" name="email" required placeholder=" ">
-                        <label>Email Address</label>
-                    </div>
-                    <div class="floating-group">
-                        <textarea name="message" required placeholder=" " rows="4" style="resize: none;"></textarea>
-                        <label>Project Details</label>
-                    </div>
-                    <button type="submit" class="submit-glow-btn">
-                        <span>Send Proposal</span>
-                        <i class='bx bx-right-arrow-alt'></i>
-                    </button>
-                </form>
+                <form id="contact-form" class="ultimate-form">
+    <div class="floating-group">
+        <input type="text" id="user_name" name="user_name" required placeholder=" ">
+        <label>Your Name</label>
+    </div>
+    <div class="floating-group">
+        <input type="email" id="user_email" name="user_email" required placeholder=" ">
+        <label>Email Address</label>
+    </div>
+    <div class="floating-group">
+        <textarea id="message" name="message" required placeholder=" " rows="4" style="resize: none;"></textarea>
+        <label>Project Details</label>
+    </div>
+    <button type="submit" class="submit-glow-btn">
+        <span>Send Proposal</span>
+        <i class='bx bx-right-arrow-alt'></i>
+    </button>
+</form>
+<div id="status" style="margin-top: 20px; text-align: center; font-weight: bold;"></div>
                 <div id="status" style="margin-top: 20px; text-align: center; font-weight: bold;"></div>
             </div>
         </div>
@@ -203,38 +206,34 @@
 
 
 
-<script>
-  var form = document.getElementById("my-form");
-  
-  async function handleSubmit(event) {
-    event.preventDefault();
-    var status = document.getElementById("status");
-    var data = new FormData(event.target);
-    
-    status.innerHTML = "Sending... | جاري الإرسال...";
-    status.style.color = "#38bdf8";
+<script type="text/javascript">
+   (function(){
+      // حط الـ Public Key بتاعك هنا مكان الكلمة دي
+      emailjs.init("YOUR_PUBLIC_KEY");
+   })();
 
-    fetch(event.target.action, {
-      method: form.method,
-      body: data,
-      headers: {
-          'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        status.innerHTML = "Success! Message Sent. | تم الإرسال بنجاح";
-        status.style.color = "#10b981";
-        form.reset();
-      } else {
-        status.innerHTML = "Oops! Error. | حدث خطأ ما";
-        status.style.color = "#ef4444";
-      }
-    }).catch(error => {
-      status.innerHTML = "Connection Error. | فشل الاتصال";
-      status.style.color = "#ef4444";
-    });
-  }
-  form.addEventListener("submit", handleSubmit)
+   const btn = document.querySelector('.submit-glow-btn');
+
+   document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const status = document.getElementById('status');
+      status.innerHTML = "Sending... | جاري الإرسال...";
+      status.style.color = "#38bdf8";
+
+      // اربط الـ IDs اللي خدتها من الموقع هنا
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+        .then(function() {
+            status.innerHTML = "Success! Message Sent. | تم الإرسال بنجاح";
+            status.style.color = "#10b981";
+            document.getElementById('contact-form').reset();
+        }, function(error) {
+            status.innerHTML = "Failed... | فشل الإرسال";
+            status.style.color = "#ef4444";
+            console.log('FAILED...', error);
+        });
+   });
+</script>
 </script>
 </script>
 </body>
