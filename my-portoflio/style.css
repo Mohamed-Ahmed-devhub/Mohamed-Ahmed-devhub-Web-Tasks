@@ -347,7 +347,6 @@ section,footer {
   background: rgba(255, 255, 255, 0.05);
 }
 
-/* --- About Grid --- */
 .about-grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -357,6 +356,7 @@ section,footer {
 
 .about-text p {
   color: var(--text-muted);
+  font-weight: 900;
   font-size: 20px;
   line-height: 1.8;
   margin-bottom: 30px;
@@ -423,17 +423,18 @@ section,footer {
 }
 .stat-card h3 {
   font-size: 45px;
-  color: #fff;
+  color: #f0f5f9;
   margin-bottom: 5px;
 }
 .stat-card p {
-  color: var(--text-muted);
-  font-size: 14px;
+  color:#0871aaaa;
+  font-size: 25px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .accent-card {
-  border-color: rgba(56, 189, 248, 0.2);
+  border-color: rgba(56, 191, 248, 0.027);
 }
 .stat-card:hover {
   transform: translateY(-10px);
@@ -444,40 +445,64 @@ section,footer {
   opacity: 0.3;
 }
 
-.skills-wrapper {
-  margin-top: 100px;
-}
+
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 0;
 }
 
 .skill-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: var(--bg-social-fack);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  padding: 18px 25px;
-  border-radius: 17px;
-  color: var(--text-muted);
-  font-size: 16px;
-  transition: 0.3s;
-}
-
-.skill-item i {
-  font-size: 22px;
-  color: var(--accent);
+    background: rgba(255, 255, 255, 0.052);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-end-start-radius: 30px;
+    border-start-end-radius: 30px;
+    transition: 0.4s ;
+    cursor:progress;
 }
 
 .skill-item:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.1);
-  transform: translateX(5px);
+    border-color: #1e3a8a;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.skill-info i {
+    font-size: 40px;
+    color: #1e3a8a;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-per {
+    height: 100%;
+    background: linear-gradient(90deg, #1e3a8a, #a855f7);
+    border-radius: 20px;
+    transition: width 2s cubic-bezier(0.1, 0.42, 0.41, 1);
+}
+
+.percentage {
+    color: #a855f7;
+    font-size: 14px;
 }
 
 .work-section {
