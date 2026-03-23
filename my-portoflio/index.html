@@ -28,6 +28,7 @@
             <div class="nav-par">
                 <a href="#"><i class='bx bx-home'></i>Home</a>
                 <a href="#About"><i class='bx bx-user'></i>About</a>
+                <a href="#growth"><i class='bx bx-trending-up'></i>Growth</a>
                 <a href="#contact"><i class='bx bx-envelope'></i>contact</a>
                 <a href="#projects"><i class='bx bx-code'></i>View Projects</a>
             </div>
@@ -64,7 +65,7 @@
         </div>
 
 
-        <div class="side-social" data-aos="fade-right">
+        <div class="social" data-aos="fade-right">
             <a href="https://wa.me/201005121073" target="_blank" title="WhatsApp">
                 <i class='bx bxl-whatsapp'></i>
             </a>
@@ -92,7 +93,7 @@
 
                 <div class="about-wrapper">
                     <div class="about-head">
-                        <span class="num">01.</span>
+                        <span class="num"><i class='bx bx-user'></i></span>
                         <h2>Behind The Logic</h2>
                         <div class="line"></div>
                     </div>
@@ -132,7 +133,7 @@
 
                 <div class="skills-wrapper">
                     <div class="about-head">
-                        <span class="num">02.</span>
+                        <span class="num"><i class='bx bx-brain'></i></span>
                         <h2>My Tech Stack</h2>
                         <div class="line"></div>
                     </div>
@@ -186,10 +187,79 @@
             </div>
         </section>
 
+<section class="timeline-section" id="growth">
+    <h2 class="section-title" data-aos="fade-up">My Growth 📈</h2>
+    
+    <div class="timeline-container">
+        <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Now</div>
+            <div class="timeline-content">
+                <h3>Building My Portfolio</h3>
+                <p>Developing this digital space to showcase my coding skills and Digital Art projects.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Early 2024</div>
+            <div class="timeline-content">
+                <h3>Diving into Web Tech</h3>
+                <p>Started learning HTML, CSS, and JS. Falling in love with creating interactive UI.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+                <h3>The First Step</h3>
+                <p>First time writing code (C++). Learned the basics of logic and problem-solving.</p>
+            </div>
+        </div>
+<section class="feedback-system" id="reviews">
+    <div class="feedback-container">
+        
+        <div class="feedback-form-side">
+            <div class="rating-card">
+                <h3 class="side-title">Leave a Mark ✨</h3>
+                <div class="star-rating">
+                    <i class='bx bx-star' data-value="1"></i>
+                    <i class='bx bx-star' data-value="2"></i>
+                    <i class='bx bx-star' data-value="3"></i>
+                    <i class='bx bx-star' data-value="4"></i>
+                    <i class='bx bx-star' data-value="5"></i>
+                </div>
+                
+                <input type="text" id="user-name" placeholder="Your Name" class="input-field">
+                <textarea id="user-comment" placeholder="Write your thoughts..."></textarea>
+                
+                <div class="voice-row">
+                    <button id="start-rec" class="v-btn"><i class='bx bxs-microphone'></i></button>
+                    <button id="stop-rec" class="v-btn stop" style="display:none;"><i class='bx bxs-stop-circle'></i></button>
+                    <span id="rec-status">Record Voice Note</span>
+                </div>
+
+                <div id="submit-area">
+                    <button id="submit-review" class="main-btn">Post Review 🚀</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback-display-side">
+            <h3 class="side-title">Recent Feedback 💬</h3>
+            <div id="reviews-container" class="reviews-list">
+                </div>
+        </div>
+
+    </div>
+</section>
+
+
         <section class="work-section" id="projects">
             <div class="main-container">
                 <div class="about-head">
-                    <span class="num">03.</span>
+                    <span class="num"><i class='bx bx-code'></i></span>
                     <h2>Selected Works</h2>
                     <div class="line"></div>
                 </div>
